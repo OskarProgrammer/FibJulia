@@ -17,9 +17,8 @@ function ciag(n::Integer)
             push!(list, fib(x))
             i+=1
         else
-            wyraz::Float64 = list[end] + list[end-1]
             println("$x: $(list[end]+list[end-1])")
-            push!(list, wyraz)
+            push!(list, list[end] + list[end-1])
         end
     end
 end
